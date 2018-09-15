@@ -190,6 +190,17 @@ h3{
 	color: #fff;
 }
 
+.search{
+	color: #fff;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 50px;
+	position: absolute;
+	right: 25px;
+	z-index: 30;
+	display: none;
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
 	.menu-top .navbar-nav, .main-menu .navbar-nav {
@@ -199,7 +210,16 @@ h3{
 		left: 20%;
 	}
 	.main-menu .navbar-form{
-		margin-left: 125px;
+		/*margin-left: 125px;*/
+		background: rgba(0, 0, 0, 0.5);
+		margin: 0;
+		padding: 15px;
+		position: absolute;
+		right: 15px;
+		display: none;
+	}
+	.search{
+		display: block;
 	}
 }
 
@@ -255,6 +275,15 @@ h3{
 		position: relative;
 		z-index: 20;
 	}
+	.search{
+		display: none;
+	}
+	.main-menu .navbar-form{
+		display: block !important;
+		position: relative;
+		right: 0;
+		background: transparent;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -265,5 +294,11 @@ h3{
 
 	.main-menu .navbar-toggle.collapsed + .navbar-brand img{
 		max-height: 80px;
+	}
+}
+
+@media only screen and (min-width : 1200px) {
+	.main-menu .navbar-form{
+		display: block !important;
 	}
 }
