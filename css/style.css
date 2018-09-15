@@ -84,6 +84,7 @@ h3{
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
 .carousel.fade .item.active{
 	opacity: 1;
@@ -116,6 +117,40 @@ h3{
 }
 .menu-carousel .carousel-control{
 	z-index: 10;
+}
+
+.carousel-indicators-wrap{
+	position: absolute;
+	width: 100%;
+	bottom: -25px;
+	text-align: center;
+}
+.carousel-indicators-wrap .carousel-indicators{
+	margin-left: 0;
+	position: relative;
+	left: 0;
+	bottom: 0;
+	display: inline-block;
+	background: #fff;
+	width: auto;
+	border: 1px solid #cfcfcf;
+	border-radius: 3px;
+	padding: 5px 25px;
+}
+.carousel-indicators-wrap .carousel-indicators li{
+	background: #d2d2d2;
+	width: 10px;
+	height: 10px;
+	margin: 0 7px;
+}
+.carousel-indicators-wrap .carousel-indicators li.active{
+	background: #a3a3a3;
+}
+.carousel-indicators-wrap .carousel-indicators li:first-child{
+	margin-left: 0;
+}
+.carousel-indicators-wrap .carousel-indicators li:last-child{
+	margin-right: 0;
 }
 
 /* Large Devices, Wide Screens */
